@@ -1,0 +1,68 @@
+<<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="tech_crew.xml" url="" />
+        </update>
+    </info>
+    
+    <<element name="Production Assistant" type="Background" source="source" id="ID_TANR_TECH_BACKGROUND_PA">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> </li>
+                <li><strong>Tool Proficiencies:</strong> </li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> </li>
+            </ul>
+            <div element="ID_BACKGROUND_FEATURE_" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p></p>
+        </description>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <rules>
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+                <item id="7"></item>
+                <item id="8"></item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+            </select>
+        </rules>
+    </element>
+    
+    
+</elements>
