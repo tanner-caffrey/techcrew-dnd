@@ -128,4 +128,24 @@
 			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
 		</rules>
 	</element>
+
+    <element name="Shop Tech" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_SHOP_TECH">
+		<description>
+			<p>You've been on shop as often as your schedule would allow, becoming trained in troubleshooting, fixing, and jury rigging equipment. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in Insight, or expertise if already proficient.</li>
+                <li>You gain proficiency in Shop Tools, or expertise if already proficient.</li>
+                <li>You gain the ability concussive maintenance, allowing you to make an attack roll against any equipment in an attempt to fix or make it act in a certain way.</li>
+            </ul>
+		</description>
+		<sheet action="Action" alt="Concussive Maintenance">
+			<description>
+                You may make an attack roll against any equipment in an attempt to fix or cause it to act in a certain way.
+            </description>
+		</sheet>
+		<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <!--<grant type="Proficiency" id="ID_TANR_TECH_TOOL_PROFICIENCY_SHOP_TOOLS" /> -->
+		</rules>
+	</element>
 </elements>
