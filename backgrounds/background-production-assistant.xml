@@ -25,6 +25,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<select type="Language" name="Language (Production Assistant)" number="1" supports="Standard||Exotic" />
             <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_WHAT_DOES_THIS_BUTTON_DO" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_BUTTON_FEATURE"/>
             <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
             <select type="List" name="Personality Trait" number="2">
                 <item id="1">I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.</item>
@@ -77,6 +78,16 @@
             <p class="indent">When you fail a skill check, saving throw, or ability check, you may add 1d4 to your next skill check, saving throw, or ability check, having learned a lesson.</p>
 		</description>
 		<sheet alt="What Does This Button Do?" />
+	</element>
+
+    <element name="What Does This Button Do?" type="Feat" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_BUTTON_FEATURE">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.</p>
+		</description>
+		<sheet alt="What Does This Button Do">
+			<description>When making a skill check, saving throw, using a tool, or attacking without a proficiency in the skill, saving throw, tool, or weapon, Critical Failures are treated as Critical Successes.
+            When you fail a skill check, saving throw, or ability check, you may add 1d4 to your next skill check, saving throw, or ability check.</description>
+		</sheet>
 	</element>
     
 </elements>
