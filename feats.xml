@@ -50,4 +50,21 @@
 		</rules>
 	</element>
 
+    <element name="Absolutely Yolked" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_ABSOLUTELY_YOLKED">
+		<description>
+			<p>You've made serious gains solely through lifting our equipment. No joke, those spotlights are heavy. You can carry 6 chair at once, single-handedly lift YAM's onto sticks, and it's even been rumored you carried board board to the Ingle mezzanine all by yourself. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+                <li>When making a strength skill check, ability check, or saving throw, you may add 1d4 to your result, however on a failed check or saving throw, you take 1d4 damage, straining yourself.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>
+                When making a strength skill check, ability check, or saving throw, you may add 1d4 to your result, however on a failed check or saving throw, you take 1d4 damage, straining yourself.
+            </description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
 </elements>
