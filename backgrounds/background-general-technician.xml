@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="background-general-technician.xml" url="" />
+        </update>
+    </info>
+    
+    <element name="General Technician" type="Background" source="RIT Tech Crew" id="ID_TANR_TECH_BACKGROUND_GENERAL_TECHNICIAN">
+        <description>
+            <p>You've made it to General Technician after a few years, and all it might have cost you was your GPA, friends, and sleep.  You've got the job down by now and can do it all pretty quickly.</p>
+            <p><i>I didn't become a Tech to gaff cable or lift JBLs-that's the PA's job.  If you need me, I'll be in the booth.</i></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong>Arcana, Slight of Hand</li>
+                <li><strong>Languages:</strong>One of your choice.</li>
+                <li><strong>Equipment:</strong>Two tech crew shirts, one polo, a pocket knife, a Scholar's Pack (a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, and a little bag of sand.).</li>
+            </ul>
+            <div element="ID_BACKGROUND_FEATURE_DELEGATION" />
+        </description>
+        <setters>
+            <set name="short">Arcana, Slight of Hand, Language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<select type="Language" name="Language (General Technician)" number="1" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_DELEGATION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_DELEGATION_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.</item>
+                <item id="2">I always want to know how things work and what makes people tick.</item>
+                <item id="3">Nobody stays angry at me or around me for long, since I can defuse any amount tension.</item>
+                <item id="4">I hide scraps of food and trinkets away in my pockets.</item>
+                <item id="5">I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</item>
+                <item id="6">I take great pains to always look my best and follow the latest fashions.</item>
+                <item id="7">I’m used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.</item>
+                <item id="8">I’ve spent so long studying and doing homework that I have little practical experience dealing with people.</item>
+                <item id="9">I am quiet and reserved, but observant. Nothing escapes my attention.</item>
+                <item id="10">I quote (or misquote) sacred texts and proverbs in almost every situation.</item>
+            </select>
+            <select type="List" name="Ideal">
+				<item id="1">Community. It is the duty of all people to strengthen the bonds of community. (Lawful)</item>
+				<item id="2">Generosity. My talents were given to me so that I could use them to benefit the world. (Good)</item>
+				<item id="3">Freedom. Everyone should be free to pursue his or her own livelihood. (Chaotic)</item>
+				<item id="4">Greed. I’m only in it for the money. (Evil)</item>
+				<item id="5">People. I’m committed to the people I care about, not to ideals. (Neutral)</item>
+				<item id="6">Aspiration. I work hard to be the best there is at my craft.</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I overlook obvious solutions in favor of complicated ones.</item>
+                <item id="2">I speak without really thinking through my words, invariably insulting others.</item>
+                <item id="3">In fact, the world does revolve around me.</item>
+                <item id="4">I’ll do anything to get my hands on something rare or priceless.</item>
+                <item id="5">I’m a sucker for a pretty face.</item>
+                <item id="6">Gold seems like a lot of money to me, and I’ll do just about anything for more of it.</item>
+                <item id="7">I can’t keep a secret to save my life, or anyone else’s.</item>
+                <item id="8">I throw myself and my friends into situations rarely ever thinking about consequences.</item>
+                <item id="9">My desire to experience new things causes me to make unsafe choices.</item>
+                <item id="10">I am overly protective of nature, sometimes to the detriment of my companions and myself.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name="Feature: Delegation" type="Background Feature" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_DELEGATION">
+		<supports>Background Feature</supports>
+		<description>
+			<p class="indent">As an action, you can command a willing, friendly creature to take a single action.
+            The action cannot involve moving more than 5 feet, unless you command them to only take movement; in which case the creature can move up to half its speed.
+            If the creature successfully completes their action, you may add 1d4 to the result of one of your future rolls.
+            This does not stack with subsequent successful actions i.e. you cannot stock up on additional d4 using this feature to add to a roll.</p>
+		</description>
+		<sheet alt="Spotlight Master" />
+	</element>
+
+    <element name="Delegation" type="Feat" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_DELEGATION_FEATURE">
+		<sheet>
+			<description>Command a willing, friendly creature to take a single action. The creature can move up to 5 feet with the action, or up to half their movement speed as the action.
+            If the creature successfully completes their action, you may add a non-stacking 1d4 to the result of one of your future rolls.</description>
+		</sheet>
+	</element>
+</elements>
