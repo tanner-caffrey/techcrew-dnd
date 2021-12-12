@@ -26,4 +26,28 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 		</rules>
 	</element>
+
+    <element name="Sound Psion" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_SOUND_PSION">
+		<description>
+			<p>You've trained your ear to become an expert at mixing and controlling soundscapes. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the Perception skill.  If you are already proficient in this skill, you add double your proficiency bonus to checks you make with it.</li>
+                <li>You gain the ability <strong>Ears Raised</strong>:</li>
+                <ul>
+                    <li>You are able to discern the frequency of any sound you hear.</li>
+                    <li>You know the location of any creature you can hear.</li>
+                    <li>You are unable to be deafened against your will.</li>
+                </ul>
+            </ul>
+		</description>
+		<sheet alt="Ears Raised">
+			<description>
+                You are able to discern the frequency of any sound you hear, know the location of any creature you can hear and are unable to be deafened against your will.
+            </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+
 </elements>
