@@ -79,7 +79,6 @@
             If the creature successfully completes their action, you may add 1d4 to the result of one of your future rolls.
             This does not stack with subsequent successful actions i.e. you cannot stock up on additional d4 using this feature to add to a roll.</p>
 		</description>
-		<sheet alt="Spotlight Master" />
 	</element>
 
     <element name="Delegation" type="Feat" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_DELEGATION_FEATURE">
