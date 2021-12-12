@@ -67,4 +67,25 @@
 			<stat name="strength" value="1" />
 		</rules>
 	</element>
+
+    <element name="Theatrical Illusionist" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_THEATRICAL_ILLUSIONIST">
+		<description>
+			<p>You have spent your free time learning and perfecting the use of Illusions for theatrical performances.  You gain the following benefits:</p>
+			<ul>
+				<li>You learn the Lamplight cantrip.</li>
+                <li>You learn the Minor Illusion cantrip.</li>
+                <li>You may cast the spell Silent Image once a day without expending a spell slot.</li>
+            </ul>
+		</description>
+		<sheet usage="Long Rest">
+			<description>
+                You may cast the spell Silent Image once per long rest without expending a spell slot.
+            </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+            <grant type="Spell" id="ID_TANR_TECH_SPELL_LAMPLIGHT" />
+		</rules>
+	</element>
 </elements>

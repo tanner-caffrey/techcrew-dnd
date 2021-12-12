@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <update version="0.4.5">
+      <file name="spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/spells.xml" />
+    </update>
+  </info>
+
+  <element name="Lamplight" type="Spell" source="RIT Tech Crew" id="ID_TANR_TECH_SPELL_LAMPLIGHT">
+    <supports>Bard, Sorcerer, Wizard, Artificer</supports>
+    <description>
+      <p>You create up to four torch-sized lights within range, making them appear as directional lamps, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing shape of your choice of Medium size. Whichever form you choose, each light sheds light as if it is a 5 to 30 degree spotlight in the direction of your choice. As a bonus action on your turn, you can turn or move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a bit of limestone</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+
+</elements>
