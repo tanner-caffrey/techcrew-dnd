@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="background-coordinator.xml" url="" />
+        </update>
+    </info>
+    
+    <element name="Coordinator" type="Background" source="RIT Tech Crew" id="ID_TANR_TECH_BACKGROUND_COORDINATOR">
+        <description>
+            <p>Filling jobs, calling clients, being given random responsibilities that aren't in your job description; you became a coordinator for some reason and for better or for worse you stuck with it.</p>
+            <p><i>You have to study for your three midterms and then work on your group project? No, you have a pod mic job for the chess club awards.</i></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong>Persuasion, <s>Cat Herding,</s> Investigation</li>
+                <li><strong>Languages:</strong>One of your choice.</li>
+                <li><strong>Equipment:</strong>Two tech crew shirts, one polo, a pocket knife, a Scholar's Pack (a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, and a little bag of sand.).</li>
+            </ul>
+            <div element="ID_BACKGROUND_FEATURE_COORDINATOR" />
+        </description>
+        <setters>
+            <set name="short">Persuasion, <s>Cat Herding,</s> Investigation</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<select type="Language" name="Language (Coordinator)" number="1" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_COORDINATOR" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_COORDINATOR_HIT_LIST_FEATURE"/>
+            <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_COORDINATOR_COSTS_EXTRA_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.</item>
+                <item id="2">I always want to know how things work and what makes people tick.</item>
+                <item id="3">Nobody stays angry at me or around me for long, since I can defuse any amount tension.</item>
+                <item id="4">I hide scraps of food and trinkets away in my pockets.</item>
+                <item id="5">I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</item>
+                <item id="6">I take great pains to always look my best and follow the latest fashions.</item>
+                <item id="7">I’m used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.</item>
+                <item id="8">I’ve spent so long studying and doing homework that I have little practical experience dealing with people.</item>
+                <item id="9">I am quiet and reserved, but observant. Nothing escapes my attention.</item>
+                <item id="10">I quote (or misquote) sacred texts and proverbs in almost every situation.</item>
+            </select>
+            <select type="List" name="Ideal">
+				<item id="1">Community. It is the duty of all people to strengthen the bonds of community. (Lawful)</item>
+				<item id="2">Generosity. My talents were given to me so that I could use them to benefit the world. (Good)</item>
+				<item id="3">Freedom. Everyone should be free to pursue his or her own livelihood. (Chaotic)</item>
+				<item id="4">Greed. I’m only in it for the money. (Evil)</item>
+				<item id="5">People. I’m committed to the people I care about, not to ideals. (Neutral)</item>
+				<item id="6">Aspiration. I work hard to be the best there is at my craft.</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1"></item>
+                <item id="2"></item>
+                <item id="3"></item>
+                <item id="4"></item>
+                <item id="5"></item>
+                <item id="6"></item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I overlook obvious solutions in favor of complicated ones.</item>
+                <item id="2">I speak without really thinking through my words, invariably insulting others.</item>
+                <item id="3">In fact, the world does revolve around me.</item>
+                <item id="4">I’ll do anything to get my hands on something rare or priceless.</item>
+                <item id="5">I’m a sucker for a pretty face.</item>
+                <item id="6">Gold seems like a lot of money to me, and I’ll do just about anything for more of it.</item>
+                <item id="7">I can’t keep a secret to save my life, or anyone else’s.</item>
+                <item id="8">I throw myself and my friends into situations rarely ever thinking about consequences.</item>
+                <item id="9">My desire to experience new things causes me to make unsafe choices.</item>
+                <item id="10">I am overly protective of nature, sometimes to the detriment of my companions and myself.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name="Feature: If You're Busy, No You're Not" type="Background Feature" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_COORDINATOR">
+		<supports>Background Feature</supports>
+		<description>
+			<p class="indent">You gain the Hit List action:
+                <p class="indent">Name a creature on your Hit List. If they are on the same plane as you, they appear at an unoccupied point you see within 60 ft of you. If they are within 10 feet of another friendly creature, that creature gains advantage on their next action, receiving the benefits of the help action. You may use this action once per short rest.</p>
+            </p>
+            <p class="indent">You gain the benefits of That Costs Extra:
+                <p class="indent">You may choose to have advantage on all charisma skill checks (Intimidation, Persuasion, Deception) against job clients for one minute.</p>
+            </p>
+		</description>
+	</element>
+
+    <element name="Hit List" type="Feat" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_COORDINATOR_HIT_LIST_FEATURE">
+		<sheet usage="Short Rest" action="Action">
+			<description>Name a creature on your Hit List. If they are on the same plane as you, they appear at an unoccupied point you see within 60 ft of you. If they are within 10 feet of another friendly creature, that creature gains advantage on their next action, receiving the benefits of the help action.</description>
+		</sheet>
+	</element>
+
+    <element name="That Costs Extra" type="Feat" source="RIT Tech Crew" id="ID_BACKGROUND_FEATURE_COORDINATOR_COSTS_EXTRA_FEATURE">
+		<sheet usage="Long Rest" action="Action">
+			<description>You may choose to have advantage on all charisma skill checks (Intimidation, Persuasion, Deception) against job clients for one minute.</description>
+		</sheet>
+	</element>
+
+</elements>
