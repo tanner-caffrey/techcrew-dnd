@@ -88,4 +88,44 @@
             <grant type="Spell" id="ID_TANR_TECH_SPELL_LAMPLIGHT" />
 		</rules>
 	</element>
+
+    <element name="Irate Expert" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_IRATE_EXPERT">
+		<description>
+			<p>You know what you're doing and are filled with a seething rage when things aren't done correctly.  You gain the following benefits:</p>
+			<ul>
+				<li>You enter a Tirade when criteria are met, once per long rest.</li>
+                <li>Choose two of the following criteria that triggers your Tirade:</li>
+                    <ul>
+                        <li>You are aware of equipment being mistreated.</li>
+                        <li>You hear poorly mixed sound.</li>
+                        <li>You observe poorly designed light work.</li>
+                        <li>A client is late or is being difficult.</li>
+                        <li>A cue is missed.</li>
+                        <li>You need equipment that is not within 200ft of you.</li>
+                        <li>You are aware of a creature that enters event or crew space that is not allowed to be there.</li>
+                        <li>And of your own.</li>
+                    </ul>
+            </ul>
+            <p><strong>Feature: Tirade</strong></p>
+            <p class="indent"><i>You enter a Tirade, pissed off beyond belief by the incompetence displayed on the job. The only thing you can focus on is ending whatever put you into a Tirade, giving you tunnel vision and are unable to be reasoned with or charmed.</i></p>
+            <p class="indent">While in a Tirade, you gain the following benefits:
+            <ul>
+                <li>You have advantage on Intimidation checks</li>
+                <li>You have disadvantage of Stealth checks</li>
+                <li>You have a Resistance to bludgeoning, piercing, psychic, lightning, and thunder damage</li>
+                <li>You cannot be charmed</li>
+                <li>Once per Tirade, you may cast Command without expending a spell slot.</li>
+            </ul>
+            Your Tirade lasts for 1 minute. It ends early if you are knocked Unconscious or if what triggered your tirade no longer would trigger it.
+            </p>
+		</description>
+		<sheet alt="Irate Expert: Tirade" usage="Long Rest">
+			<description>
+                When your criteria are met, you enter a Tirade. Gain advantage on Intimidation checks, disadvantage on Stealth checks, Resistance to bludgeoning, piercing, psychic, lightning, and thunder damage, you cannot be charmed, and may cast Command without expending a spell slot. Your Tirade lasts for 1 minute. It ends early if you are knocked Unconscious or if what triggered your tirade no longer would trigger it.
+            </description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+		</rules>
+	</element>
 </elements>
