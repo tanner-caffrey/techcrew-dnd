@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="0.0.1">
-            <file name="background-production-assistant.xml" url="" />
+		    <file name="background-production-assistant.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-production-assistant.xml" />
         </update>
     </info>
     

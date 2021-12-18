@@ -4,7 +4,7 @@
 		<name>Adventuring Gear</name>
 		<description></description>
 		<update version="0.1.0">
-			<file name="items-gear.xml" url="" />
+		    <file name="items.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/items.xml" />
 		</update>
 	</info>
     <element name="Fey Brew" type="Magic Item" source="RIT Tech Crew" id="ID_TANR_TECH_ITEM_FEW_BREW">

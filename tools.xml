@@ -3,7 +3,7 @@
 	<info>
 		<name>Tools</name>
 		<update version="0.0.1">
-			<file name="items-tools.xml" url="" />
+			<file name="tools.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/tools.xml" />
 		</update>
 	</info>
 	<element name="Shop Tools" type="Item" source="Player’s Handbook" id="ID_TANR_TECH_TOOL_SHOP_TOOLS">

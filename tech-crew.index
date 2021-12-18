@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>RIT Tech Crew</name>
+		<description>Additional content for RIT Tech Crew.</description>
+		<author url="https://github.com/tanner-caffrey/techcrew-dnd">Tanner Caffrey</author>
+		<update version="0.1">
+			<file name="techcrew.index" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/tech-crew.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/source.xml" />
+		
+		<!-- backgrounds -->		
+		<file name="background-production-assistant.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-production-assistant.xml" />
+		<file name="background-trainee.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-trainee.xml" />
+		<file name="background-junior-technician.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-junior-technician.xml" />
+		<file name="background-general-technician.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-general-technician.xml" />
+		<file name="background-senior-technician.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-senior-technician.xml" />
+		<file name="background-coordinator.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/backgrounds/background-coordinator.xml" />
+
+		<!-- misc -->
+		<file name="items.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/items.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/spells.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/feats.xml" />
+		<file name="tools.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/tools.xml" />
+
+	</files>
+</index>

@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats from RIT Tech Crew.</description>
 		<update version="0.1.0">
-			<file name="feats.xml" url="" />
+			<file name="feats.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/feats.xml" />
 		</update>
 	</info>
     <element name="Lucky Slacker" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_LUCKY_SLACKER">

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/tanner-caffrey/techcrew-dnd/main/source.xml" />
+		</update>
+	</info>
+	<element name="RIT Tech Crew" type="Source" source="Core" id="ID_TANR_TECH_SOURCE">
+		<description>
+			<![CDATA[<p><strong>Additional content for RIT Tech Crew</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">PHB</set>
+			<set name="url">https://github.com/tanner-caffrey/techcrew-dnd</set>
+			<set name="author" abbreviation="TANR" url="https://github.com/tanner-caffrey/">Tanner Caffrey</set>
+			<set name="official">true</set>
+			<set name="core">true</set>
+			<set name="release">20140819</set>
+		</setters>
+	</element>
+</elements>
