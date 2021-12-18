@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<description></description>
+		<update version="0.1.0">
+			<file name="items-gear.xml" url="" />
+		</update>
+	</info>
+    <element name="Fey Brew" type="Magic Item" source="RIT Tech Crew" id="ID_TANR_TECH_ITEM_FEW_BREW">
+		<description>
+			<p>A pearlescent, sparkling brew procured from the feywilds from the realm of Hyrsam himself. Good luck. On drinking, gain the following effect for an hour unless otherwise stated:</p>
+            <table>
+                <thead>
+                    <tr>
+                    <th>D100 Roll</th>
+                    <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1-4</td>
+                    <td>Roll a D6 and a D20. For the next hour, your ability score matching the D6 roll (1=STR,2=DEX,etc) is now the D20 result.</td>
+                    </tr>
+                    <tr>
+                    <td>5-8</td>
+                    <td>Gain 60 ft of magical flight.</td>
+                    </tr>
+                    <tr>
+                    <td>9-12</td>
+                    <td>You turn into a gnome.</td>
+                    </tr>
+                    <tr>
+                    <td>13-16</td>
+                    <td>Your head is twice as big. Gain a +2 to your Wisdom and Intelligence score, and a -1 to AC.</td>
+                    </tr>
+                    <tr>
+                    <td>17-20</td>
+                    <td>Your head is twice as small. Gain a +2 to your Dexterity ability score and AC, and a -2 to Intelligence score.</td>
+                    </tr>
+                    <tr>
+                    <td>21-24</td>
+                    <td>You turn invisible but only while you are dancing.</td>
+                    </tr>
+                    <tr>
+                    <td>25-28</td>
+                    <td>Your true name and location is revealed to the nearest fey.</td>
+                    </tr>
+                    <tr>
+                    <td>29-32</td>
+                    <td>The potion is full of endless beer. Gain a +2 to your Strength ability score, and a -4 to Dexterity ability score.</td>
+                    </tr>
+                    <tr>
+                    <td>33-36</td>
+                    <td>Your mom contacts you in the most expedious way.</td>
+                    </tr>
+                    <tr>
+                    <td>37-40</td>
+                    <td>Your punches cast fireball centered on your fists with spell shaping.</td>
+                    </tr>
+                    <tr>
+                    <td>41-44</td>
+                    <td>Your jump distance is tripled.</td>
+                    </tr>
+                    <tr>
+                    <td>45-48</td>
+                    <td>Roll a D4. For the next minute, you projectile vomit the matching liquid a distance of 10 feet. (water, grease, acid, beer)</td>
+                    </tr>
+                    <tr>
+                    <td>49-52</td>
+                    <td>Planeshift to the feywild for the next d4 rounds.</td>
+                    </tr>
+                    <tr>
+                    <td>53-56</td>
+                    <td>Hyrsam finds out you stole brew from his realm.</td>
+                    </tr>
+                    <tr>
+                    <td>57-60</td>
+                    <td>You cannot lie. Make a Wisdom saving throw (DC 12). On a failed save, you compulsively tell the truth.</td>
+                    </tr>
+                    <tr>
+                    <td>61-64</td>
+                    <td>A magical fey barrier surrounds you, increasing your AC by 5 for the next minute.</td>
+                    </tr>
+                    <tr>
+                    <td>65-68</td>
+                    <td>You can understand and speak all languages.</td>
+                    </tr>
+                    <tr>
+                    <td>69-72</td>
+                    <td>You can speak with plants.</td>
+                    </tr>
+                    <tr>
+                    <td>73-76</td>
+                    <td>Your worst fear materializes as a phantasmal force.</td>
+                    </tr>
+                    <tr>
+                    <td>77-80</td>
+                    <td>Your pupils dilate, letting you to see 140 feet through magical and non-magical darkness as if it is bright light, but you also faintly see the overlay of the feywilds.</td>
+                    </tr>
+                    <tr>
+                    <td>81-84</td>
+                    <td>Faerie Fire is cast on you.</td>
+                    </tr>
+                    <tr>
+                    <td>85-88</td>
+                    <td>When you open your mouth, the sound of a fiddle playing a jig comes out.</td>
+                    </tr>
+                    <tr>
+                    <td>89-92</td>
+                    <td>You become <strong><i>the good kind of drunk</i></strong> and have advantage on all charisma skill checks and saving throws.</td>
+                    </tr>
+                    <tr>
+                    <td>93-96</td>
+                    <td>You can cast Eldritch Blast using Charisma as your spellcasting modifyer.</td>
+                    </tr>
+                    <tr>
+                    <td>97-100</td>
+                    <td>Your pockets explode with 2,000 copper coins.</td>
+                    </tr>
+                </tbody>
+            </table>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>
