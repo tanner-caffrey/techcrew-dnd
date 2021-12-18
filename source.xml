@@ -13,9 +13,8 @@
 			<set name="abbreviation">PHB</set>
 			<set name="url">https://github.com/tanner-caffrey/techcrew-dnd</set>
 			<set name="author" abbreviation="TANR" url="https://github.com/tanner-caffrey/">Tanner Caffrey</set>
-			<set name="official">true</set>
-			<set name="core">true</set>
-			<set name="release">20140819</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
 		</setters>
 	</element>
 </elements>
