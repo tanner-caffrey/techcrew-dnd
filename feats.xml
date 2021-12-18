@@ -149,6 +149,26 @@
 		</rules>
 	</element>
 
+    <element name="Enigmatic Host" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_ENIGMATIC_HOST">
+		<description>
+			<p>Living in one of the famed houses known for partying, you have the responsibility of keeping everyone safe while also partying hard and making it a night to remember. Also sometimes people fuck in your basement, sorry. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in Medicine.</li>
+                <li>You have advantage on Persuasion and Deception checks when interacting with somebody under the influence of alcohol.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>
+                You have advantage on Persuasion and Deception checks when interacting with creatures under the influence of alcohol.
+            </description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+		</rules>
+	</element>
+
     <element name="Party Master" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_PARTY_MASTER">
 		<description>
 			<p>You're at every party the crew throws, and more times than not, you've become the main character of the party for at least a half hour.  What that means is up to you. Maybe you caught yourself on fire. Maybe you fell of the roof on purpose while shotgunning a beer.  Perhaps you accidentally summoned a lesser demon again.  We've all been there, but you seem to always be there.  You gain the following benefits:</p>
