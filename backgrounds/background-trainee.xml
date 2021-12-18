@@ -29,16 +29,35 @@
             <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_HUBRIS_FEATURE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
             <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
             <select type="List" name="Personality Trait" number="2">
-                <item id="1">I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.</item>
-                <item id="2">I always want to know how things work and what makes people tick.</item>
-                <item id="3">Nobody stays angry at me or around me for long, since I can defuse any amount tension.</item>
-                <item id="4">I hide scraps of food and trinkets away in my pockets.</item>
-                <item id="5">I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</item>
-                <item id="6">I take great pains to always look my best and follow the latest fashions.</item>
-                <item id="7">I’m used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.</item>
-                <item id="8">I’ve spent so long studying and doing homework that I have little practical experience dealing with people.</item>
-                <item id="9">I am quiet and reserved, but observant. Nothing escapes my attention.</item>
-                <item id="10">I quote (or misquote) sacred texts and proverbs in almost every situation.</item>
+                <item id="1">I thrive on esoteric lore.  The more obscure the historical references I can include in everyday conversation, the better.</item>
+                <item id="2">I can barely go a minute without talking about my research. I have so much knowledge in my head, and it needs to be let out somewhere!</item>
+                <item id="3">The spirits of the dead are so much interesting to talk with than living classmates.</item>
+                <item id="4">I can speak eloquently about the historical ramifications of an ancient war.  But ask me to add two-digit numbers together, and I'm a mess.</item>
+                <item id="5">In the end, it's all just entropy.  Everything falls apart someday.</item>
+                <item id="6">I'm the life of the party, and I expect everyone's attention when I walk into a room.</item>
+                <item id="7">Two weeks ago, I was enthralled with my latest project.  Now, I think it's garbage and deserves to be destoryed.</item>
+                <item id="8">I believe everyone has the ability to express their truest selves through art, and I'm happy to quietly push them in the right direction.</item>
+                <item id="9">Everyone is a critic, and I work to win them all over.</item>
+                <item id="10">I'm beset with such an overwhelming sense of ennui regarding my studies or craft. Nothing quite captures my attention anymore.</item>
+                <item id="11">Instead of confronting my negative emotions, I channel them into explosive artistic displays.</item>
+                <item id="12">When I find a subject I'm interested in, I won't stop studying until I know everything about it.  It keeps me up at night.</item>
+                <item id="13">I hope this all makes sense to me one day.  Until then, I'm going to keep faking it.</item>
+                <item id="14">Equations and pattersn come naturally to my mind. I wish friendship came just as easily.</item>
+                <item id="15">I believe I'm always the amrtest person in the room. And I'll prove it, even if no one asks me to.</item>
+                <item id="16">If these classes have taught meeverything, it's that reality is a lie, and nothing matters.</item>
+                <item id="17">Before I graduate, I want to achieve something impossible. I must leave a legacy!</item>
+                <item id="18">I'll say whatever I need to in order to maintain my high social status.</item>
+                <item id="19">I prefer saying the blunt truth over a petty lie, and I don't particularly care whose feelings I hurt.</item>
+                <item id="20">I believe that uplifting my peers is the best way to succeed.</item>
+                <item id="21">I've mastered the art of using humor as a defense, and I always have a charming joke ready.</item>
+                <item id="22">I always wait before speaking, analyzing the situation for whichever angle is most advantageous to my goals.</item>
+                <item id="23">No one knows about the all-nighters I've pulled to keep my magic looking effortless, and I'm going to keep it that way.</item>
+                <item id="24">I love brewing up a new recipe, even if some might be repulsed by my choice of ingredients. Or the final product. Or both.</item>
+                <item id="25">My fashion sense is like my garden,: withered, black, and weird.</item>
+                <item id="26">I'm going to befriend every single monster in this swamp if it's the last thing I do.</item>
+                <item id="27">Everything in this world dies eventually.  The question is, what will you do with the time you have left?</item>
+                <item id="28">I know we just met, but when you die, may I have your bones? For research.</item>
+                <item id="29">Don't interrupt me; I'm brooding.</item>
             </select>
             <select type="List" name="Ideal">
 				<item id="1">Community. It is the duty of all people to strengthen the bonds of community. (Lawful)</item>
@@ -46,15 +65,11 @@
 				<item id="3">Freedom. Everyone should be free to pursue his or her own livelihood. (Chaotic)</item>
 				<item id="4">Greed. I’m only in it for the money. (Evil)</item>
 				<item id="5">People. I’m committed to the people I care about, not to ideals. (Neutral)</item>
-				<item id="6">Aspiration. I work hard to be the best there is at my craft.</item>
-            </select>
-            <select type="List" name="Bond">
-                <item id="1"></item>
-                <item id="2"></item>
-                <item id="3"></item>
-                <item id="4"></item>
-                <item id="5"></item>
-                <item id="6"></item>
+				<item id="6">Aspiration. I work hard to be the best there is at my craft. (Any)</item>
+                <item id="7">Beauty. What is beautiful points us beyond itself toward what is true. (Good)</item>
+				<item id="8">Logic. Emotions must not cloud our logical thinking. (Lawful)</item>
+				<item id="9">No Limits. Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)</item>
+				<item id="10">Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)</item>
             </select>
             <select type="List" name="Flaw">
                 <item id="1">I overlook obvious solutions in favor of complicated ones.</item>
