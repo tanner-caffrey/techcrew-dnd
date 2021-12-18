@@ -72,9 +72,8 @@
 		<description>
 			<p>You have spent your free time learning and perfecting the use of Illusions for theatrical performances.  You gain the following benefits:</p>
 			<ul>
-				<li>You learn the Lamplight cantrip.</li>
-                <li>You learn the Minor Illusion cantrip.</li>
-                <li>You may cast the spell Silent Image once a day without expending a spell slot.</li>
+				<li>You learn the Lamplight, Minor Illusion, and Silent Image spells.</li>
+                <li>You may cast the spell Silent Image once without expending a spell slot, and you regain the ability to do so after you finish a long rest.</li>
             </ul>
 		</description>
 		<sheet usage="Long Rest">
@@ -300,6 +299,27 @@
 		</sheet>
         <rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+    <element name="Lighting Artist" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_LIGHTING_ARTIST">
+		<description>
+			<p>Creating the perect lightscape isn't just your job. It's your craft.  It's art. And it's all in the hips. You gain the following benefits:</p>
+			<ul>
+				<li>Learn the Prismatic Beam and Color Spray spells.</li>
+                <li>You may cast the spell Color Spray without expending a spell slot, and you regain the ability to do so after you finish a long rest.</li>
+				<li>You gain proficiency in Performance.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>
+				You learn the Prismatic Beam and Color Spray spells. You can cast Color Spray once without expending a spell slot, and you regain the ability to do so after you finish a long rest.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" />
+			<grant type="Spell" id="ID_TANR_TECH_SPELL_PRISMATIC_BEAM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		</rules>
 	</element>
 
