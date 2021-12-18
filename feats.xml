@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from RIT Tech Crew.</description>
+		<update version="0.1.0">
+			<file name="feats.xml" url="" />
+		</update>
+	</info>
+    <element name="Lucky Slacker" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_LUCKY_SLACKER">
+		<description>
+			<p>You've never studied for sign offs, it took you five tries to pass your PA-12 sign off, and you only got the customer service sign off because you guessed the coordinator's number correctly with random numbers.  Honestly you don't know how you've made it this far, but you haven't gotten in trouble yet. Gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the Deception skill.  If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li><p>You have one luck point. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</p>
+                <p>You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker’s roll or yours.</p>
+                <p>If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.</p>
+                <p>You regain your expended luck points when you finish a long rest.</p></li>
+            </ul>
+		</description>
+		<sheet usage="Long Rest">
+			<description>Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined.
+			You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker’s roll or yours.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
+	</element>
+
+    <element name="Sound Psion" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_SOUND_PSION">
+		<description>
+			<p>You've trained your ear to become an expert at mixing and controlling soundscapes. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the Perception skill.  If you are already proficient in this skill, you add double your proficiency bonus to checks you make with it.</li>
+                <li>You gain the ability <strong>Ears Raised</strong>:</li>
+                <ul>
+                    <li>You are able to discern the frequency of any sound you hear.</li>
+                    <li>You know the location of any creature you can hear.</li>
+                    <li>You are unable to be deafened against your will.</li>
+                </ul>
+            </ul>
+		</description>
+		<sheet alt="Ears Raised">
+			<description>
+                You are able to discern the frequency of any sound you hear, know the location of any creature you can hear and are unable to be deafened against your will.
+            </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+
+    <element name="Absolutely Yolked" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_ABSOLUTELY_YOLKED">
+		<description>
+			<p>You've made serious gains solely through lifting our equipment. No joke, those spotlights are heavy. You can carry 6 chair at once, single-handedly lift YAM's onto sticks, and it's even been rumored you carried board board to the Ingle mezzanine all by yourself. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+                <li>When making a strength skill check, ability check, or saving throw, you may add 1d4 to your result, however on a failed check or saving throw, you take 1d4 damage, straining yourself.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>
+                When making a strength skill check, ability check, or saving throw, you may add 1d4 to your result, however on a failed check or saving throw, you take 1d4 damage, straining yourself.
+            </description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+    <element name="Theatrical Illusionist" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_THEATRICAL_ILLUSIONIST">
+		<description>
+			<p>You have spent your free time learning and perfecting the use of Illusions for theatrical performances.  You gain the following benefits:</p>
+			<ul>
+				<li>You learn the Lamplight cantrip.</li>
+                <li>You learn the Minor Illusion cantrip.</li>
+                <li>You may cast the spell Silent Image once a day without expending a spell slot.</li>
+            </ul>
+		</description>
+		<sheet usage="Long Rest">
+			<description>
+                You may cast the spell Silent Image once per long rest without expending a spell slot.
+            </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+            <grant type="Spell" id="ID_TANR_TECH_SPELL_LAMPLIGHT" />
+		</rules>
+	</element>
+
+    <element name="Irate Expert" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_IRATE_EXPERT">
+		<description>
+			<p>You know what you're doing and are filled with a seething rage when things aren't done correctly.  You gain the following benefits:</p>
+			<ul>
+				<li>You enter a Tirade when criteria are met, once per long rest.</li>
+                <li>Choose two of the following criteria that triggers your Tirade:</li>
+                    <ul>
+                        <li>You are aware of equipment being mistreated.</li>
+                        <li>You hear poorly mixed sound.</li>
+                        <li>You observe poorly designed light work.</li>
+                        <li>A client is late or is being difficult.</li>
+                        <li>A cue is missed.</li>
+                        <li>You need equipment that is not within 200ft of you.</li>
+                        <li>You are aware of a creature that enters event or crew space that is not allowed to be there.</li>
+                        <li>And of your own.</li>
+                    </ul>
+            </ul>
+            <p><strong>Feature: Tirade</strong></p>
+            <p class="indent"><i>You enter a Tirade, pissed off beyond belief by the incompetence displayed on the job. The only thing you can focus on is ending whatever put you into a Tirade, giving you tunnel vision and are unable to be reasoned with or charmed.</i></p>
+            <p class="indent">While in a Tirade, you gain the following benefits:
+            <ul>
+                <li>You have advantage on Intimidation checks</li>
+                <li>You have disadvantage of Stealth checks</li>
+                <li>You have a Resistance to bludgeoning, piercing, psychic, lightning, and thunder damage</li>
+                <li>You cannot be charmed</li>
+                <li>Once per Tirade, you may cast Command without expending a spell slot.</li>
+            </ul>
+            Your Tirade lasts for 1 minute. It ends early if you are knocked Unconscious or if what triggered your tirade no longer would trigger it.
+            </p>
+		</description>
+		<sheet alt="Irate Expert: Tirade" usage="Long Rest">
+			<description>
+                When your criteria are met, you enter a Tirade. Gain advantage on Intimidation checks, disadvantage on Stealth checks, Resistance to bludgeoning, piercing, psychic, lightning, and thunder damage, you cannot be charmed, and may cast Command without expending a spell slot. Your Tirade lasts for 1 minute. It ends early if you are knocked Unconscious or if what triggered your tirade no longer would trigger it.
+            </description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+		</rules>
+	</element>
+
+    <element name="Shop Tech" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_SHOP_TECH">
+		<description>
+			<p>You've been on shop as often as your schedule would allow, becoming trained in troubleshooting, fixing, and jury rigging equipment. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in Insight, or expertise if already proficient.</li>
+                <li>You gain proficiency in Shop Tools, or expertise if already proficient.</li>
+                <li>You gain the ability concussive maintenance, allowing you to make an attack roll against any equipment in an attempt to fix or make it act in a certain way.</li>
+            </ul>
+		</description>
+		<sheet action="Action" alt="Concussive Maintenance">
+			<description>
+                You may make an attack roll against any equipment in an attempt to fix or cause it to act in a certain way.
+            </description>
+		</sheet>
+		<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <!--<grant type="Proficiency" id="ID_TANR_TECH_TOOL_PROFICIENCY_SHOP_TOOLS" /> -->
+		</rules>
+	</element>
+
+    <element name="Enigmatic Host" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_ENIGMATIC_HOST">
+		<description>
+			<p>Living in one of the famed houses known for partying, you have the responsibility of keeping everyone safe while also partying hard and making it a night to remember. Also sometimes people fuck in your basement, sorry. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in Medicine.</li>
+                <li>You have advantage on Persuasion and Deception checks when interacting with somebody under the influence of alcohol.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>
+                You have advantage on Persuasion and Deception checks when interacting with creatures under the influence of alcohol.
+            </description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+		</rules>
+	</element>
+
+    <element name="Party Master" type="Feat" source="RIT Tech Crew" id="ID_TANR_TECH_FEAT_PARTY_MASTER">
+		<description>
+			<p>You're at every party the crew throws, and more times than not, you've become the main character of the party for at least a half hour.  What that means is up to you. Maybe you caught yourself on fire. Maybe you fell of the roof on purpose while shotgunning a beer.  Perhaps you accidentally summoned a lesser demon again.  We've all been there, but you seem to always be there.  You gain the following benefits:</p>
+			<ul>
+				<li>Gain resistance to poison.</li>
+                <li>Gain the ability <strong>Fey Brew Stash</strong>:
+					<p></p>
+                    <p class="indent">Once per day, you may produce a <strong>Fey Brew</strong>.</p>
+					<p></p>
+					<h4>Fey Brew</h4>
+					<p>A pearlescent, sparkling brew procured from the feywilds from the realm of Hyrsam himself. Good luck. On drinking, gain the following effect for an hour unless otherwise stated:</p>
+					<table>
+						<thead>
+							<tr>
+							<th>D100 Roll</th>
+							<th>Effect</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<td>1-4</td>
+							<td>Roll a D6 and a D20. For the next hour, your ability score matching the D6 roll (1=STR,2=DEX,etc) is now the D20 result.</td>
+							</tr>
+							<tr>
+							<td>5-8</td>
+							<td>Gain 60 ft of magical flight.</td>
+							</tr>
+							<tr>
+							<td>9-12</td>
+							<td>You turn into a gnome.</td>
+							</tr>
+							<tr>
+							<td>13-16</td>
+							<td>Your head is twice as big. Gain a +2 to your Wisdom and Intelligence score, and a -1 to AC.</td>
+							</tr>
+							<tr>
+							<td>17-20</td>
+							<td>Your head is twice as small. Gain a +2 to your Dexterity ability score and AC, and a -2 to Intelligence score.</td>
+							</tr>
+							<tr>
+							<td>21-24</td>
+							<td>You turn invisible but only while you are dancing.</td>
+							</tr>
+							<tr>
+							<td>25-28</td>
+							<td>Your true name and location is revealed to the nearest fey.</td>
+							</tr>
+							<tr>
+							<td>29-32</td>
+							<td>The potion is full of endless beer. Gain a +2 to your Strength ability score, and a -4 to Dexterity ability score.</td>
+							</tr>
+							<tr>
+							<td>33-36</td>
+							<td>Your mom contacts you in the most expedious way.</td>
+							</tr>
+							<tr>
+							<td>37-40</td>
+							<td>Your punches cast fireball centered on your fists with spell shaping.</td>
+							</tr>
+							<tr>
+							<td>41-44</td>
+							<td>Your jump distance is tripled.</td>
+							</tr>
+							<tr>
+							<td>45-48</td>
+							<td>Roll a D4. For the next minute, you projectile vomit the matching liquid a distance of 10 feet. (water, grease, acid, beer)</td>
+							</tr>
+							<tr>
+							<td>49-52</td>
+							<td>Planeshift to the feywild for the next d4 rounds.</td>
+							</tr>
+							<tr>
+							<td>53-56</td>
+							<td>Hyrsam finds out you stole brew from his realm.</td>
+							</tr>
+							<tr>
+							<td>57-60</td>
+							<td>You cannot lie. Make a Wisdom saving throw (DC 12). On a failed save, you compulsively tell the truth.</td>
+							</tr>
+							<tr>
+							<td>61-64</td>
+							<td>A magical fey barrier surrounds you, increasing your AC by 5 for the next minute.</td>
+							</tr>
+							<tr>
+							<td>65-68</td>
+							<td>You can understand and speak all languages.</td>
+							</tr>
+							<tr>
+							<td>69-72</td>
+							<td>You can speak with plants.</td>
+							</tr>
+							<tr>
+							<td>73-76</td>
+							<td>Your worst fear materializes as a phantasmal force.</td>
+							</tr>
+							<tr>
+							<td>77-80</td>
+							<td>Your pupils dilate, letting you to see 140 feet through magical and non-magical darkness as if it is bright light, but you also faintly see the overlay of the feywilds.</td>
+							</tr>
+							<tr>
+							<td>81-84</td>
+							<td>Faerie Fire is cast on you.</td>
+							</tr>
+							<tr>
+							<td>85-88</td>
+							<td>When you open your mouth, the sound of a fiddle playing a jig comes out.</td>
+							</tr>
+							<tr>
+							<td>89-92</td>
+							<td>You become <strong><i>the good kind of drunk</i></strong> and have advantage on all charisma skill checks and saving throws.</td>
+							</tr>
+							<tr>
+							<td>93-96</td>
+							<td>You can cast Eldritch Blast using Charisma as your spellcasting modifyer.</td>
+							</tr>
+							<tr>
+							<td>97-100</td>
+							<td>Your pockets explode with 2,000 copper coins.</td>
+							</tr>
+						</tbody>
+					</table>
+			    </li>
+            </ul>
+		</description>
+		<sheet alt="Fey Brew Stash" usage="1/Day">
+			<description>
+                Once per day, you may gain a Fey Brew. You cannot have more than one at a time.
+            </description>
+		</sheet>
+        <rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+</elements>
