@@ -28,7 +28,7 @@
     </setters>
   </element>
   
-  <element name="Prismatic Beam" type="Spell" source="Player’s Handbook" id="ID_TANR_TECH_SPELL_PRISMATIC_BEAM">
+  <element name="Prismatic Beam" type="Spell" source="RIT Tech Crew" id="ID_TANR_TECH_SPELL_PRISMATIC_BEAM">
     <supports>Sorcerer, Wizard, Bard, Warlock, Artificer</supports>
     <description>
       <p>A dazzling beam of flashing, colored light springs from your hand toward a creature within range.</p>
