@@ -70,14 +70,6 @@
 				<item id="9">No Limits. Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)</item>
 				<item id="10">Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)</item>
             </select>
-            <select type="List" name="Bond">
-                <item id="1"></item>
-                <item id="2"></item>
-                <item id="3"></item>
-                <item id="4"></item>
-                <item id="5"></item>
-                <item id="6"></item>
-            </select>
             <select type="List" name="Flaw">
                 <item id="1">I overlook obvious solutions in favor of complicated ones.</item>
                 <item id="2">I speak without really thinking through my words, invariably insulting others.</item>
