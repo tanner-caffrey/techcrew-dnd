@@ -37,7 +37,7 @@
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">1</set>
+      <set name="level">0</set>
       <set name="school">Illusion</set>
       <set name="time">1 action</set>
       <set name="duration">1 round</set>
